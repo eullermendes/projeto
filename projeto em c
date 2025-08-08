@@ -1,0 +1,143 @@
+#include <stdio.h>
+
+int main() {
+    int resposta, pontuacao = 0;
+
+    printf("=== JOGO DE PERGUNTAS - 10 QUESTOES ===\n\n");
+
+    // Pergunta 1
+    printf("1) Qual e a capital do Brasil?\n");
+    printf("1. Sao Paulo\n2. Brasilia\n3. Rio de Janeiro\n4. Salvador\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 2) {
+        printf("✔️ Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta e Brasília.\n\n");
+    }
+
+    // Pergunta 2
+    printf("2) Qual o maior planeta do Sistema Solar?\n");
+    printf("1. Terra\n2. Saturno\n3. Júpiter\n4. Marte\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 3) {
+        printf("e Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta e Júpiter.\n\n");
+    }
+
+    // Pergunta 3
+    printf("3) Quem escreveu 'Dom Casmurro'?\n");
+    printf("1. Machado de Assis\n2. Jose de Alencar\n3. Clarice Lispector\n4. Paulo Coelho\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 1) {
+        printf("✔️ Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta é Machado de Assis.\n\n");
+    }
+
+    // Pergunta 4
+    printf("4) Quanto e 12 x 8?\n");
+    printf("1. 96\n2. 86\n3. 106\n4. 88\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 1) {
+        printf(" Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta e 96.\n\n");
+    }
+
+    // Pergunta 5
+    printf("5) Quem pintou a Mona Lisa?\n");
+    printf("1. Michelangelo\n2. Leonardo da Vinci\n3. Van Gogh\n4. Picasso\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 2) {
+        printf("✔️ Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta a Leonardo da Vinci.\n\n");
+    }
+
+    // Pergunta 6
+    printf("6) Qual e a farmula da agua?\n");
+    printf("1. CO2\n2. H2O\n3. O2\n4. NaCl\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 2) {
+        printf("✔️ Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf("e Errado. A resposta correta e H2O.\n\n");
+    }
+
+    // Pergunta 7
+    printf("7) Em que continente fica o Egito?\n");
+    printf("1. asia\n2. Europa\n3. africa\n4. America\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 3) {
+        printf(" Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta é África.\n\n");
+    }
+
+    // Pergunta 8
+    printf("8) Qual animal e conhecido como 'rei da selva'?\n");
+    printf("1. Leaozinho\n2. Tigre\n3. Elefante\n4. Gorila\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 1) {
+        printf(" Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta e Leaozinho.\n\n");
+    }
+
+    // Pergunta 9
+    printf("9) Qual e o idioma oficial do Brasil?\n");
+    printf("1. Espanhol\n2. Portugues\n3. Ingles\n4. Frances\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 2) {
+        printf(" Correto!\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta E Portugues.\n\n");
+    }
+
+    // Pergunta 10
+    printf("10) Quantos segundos tem 1 minuto?\n");
+    printf("1. 60\n2. 100\n3. 120\n4. 30\n");
+    printf("Sua resposta: ");
+    scanf("%d", &resposta);
+    if (resposta == 1) {
+        printf(" Correto\n\n");
+        pontuacao++;
+    } else {
+        printf(" Errado. A resposta correta e 60.\n\n");
+    }
+
+    // Resultado final
+    printf("=== RESULTADO FINAL ===\n");
+    printf("Você acertou %d de 10 perguntas.\n", pontuacao);
+
+    if (pontuacao == 10) {
+        printf(" Parabens! Voce e um mestre!\n");
+    } else if (pontuacao >= 7) {
+        printf(" Muito bem\n");
+    } else if (pontuacao >= 4) {
+        printf(" Bom esforco, continue praticando!\n");
+    } else {
+        printf("📘 Estude mais e tente novamente!\n");
+    }
+
+    return 0;
+}
