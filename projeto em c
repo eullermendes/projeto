@@ -11,7 +11,7 @@ int main() {
     printf("Sua resposta: ");
     scanf("%d", &resposta);
     if (resposta == 2) {
-        printf("✔️ Correto!\n\n");
+        printf(" Correto!\n\n");
         pontuacao++;
     } else {
         printf(" Errado. A resposta correta e Brasília.\n\n");
@@ -136,7 +136,7 @@ int main() {
     } else if (pontuacao >= 4) {
         printf(" Bom esforco, continue praticando!\n");
     } else {
-        printf("📘 Estude mais e tente novamente!\n");
+        printf(" Estude mais e tente novamente!\n");
     }
 
     return 0;
